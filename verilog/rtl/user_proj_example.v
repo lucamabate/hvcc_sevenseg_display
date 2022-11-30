@@ -89,7 +89,7 @@ endmodule
 module counter (
         input   clk,
         input   rstn,
-        output reg[3:0] out
+        output reg[2:0] out
 );
 
 always @ (posedge clk) begin
@@ -102,13 +102,13 @@ end
 endmodule
 
 
-module segment7(
+module segment7 (
      count,
      segments
     );
 
      //Declare inputs,outputs and internal variables.
-     input [3:0] count;
+     input [2:0] count;
      output reg [6:0] segments;
 
 //always block for converting bin count into 7 segment format
@@ -124,8 +124,8 @@ module segment7(
             5:  segments = 7'b1101101;
             6:  segments = 7'b1111100;
             7:  segments = 7'b0000111;
-            8:  segments = 7'b1111111;
-            9:  segments = 7'b1100111;
+  //          8:  segments = 7'b1111111;
+  //          9:  segments = 7'b1100111;
             default:
                 segments = 7'b0000000;
         endcase
