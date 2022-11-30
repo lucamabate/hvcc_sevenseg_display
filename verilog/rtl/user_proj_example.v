@@ -35,9 +35,8 @@
  *-------------------------------------------------------------
  */
 
-module user_proj_example #(
-    parameter BITS = 32
-)(
+module user_proj_example(
+    
 `ifdef USE_POWER_PINS
     inout vccd1,	// User area 1 1.8V supply
     inout vssd1,	// User area 1 digital ground
@@ -76,11 +75,11 @@ module user_proj_example #(
     counter c0 (
         .clk(clk),
         .rstn(rstn),
-        .out(count[3:0])
+        .out(count[2:0])
     );
 
     segment7 s0 (
-        .count(count[3:0]),
+        .count(count[2:0]),
         .segments(led)
     );
 
