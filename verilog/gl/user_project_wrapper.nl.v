@@ -25,7 +25,7 @@ module user_project_wrapper (user_clock2,
  input wbs_cyc_i;
  input wbs_stb_i;
  input wbs_we_i;
- inout [27:0] analog_io;
+ inout [28:0] analog_io;
  input [37:0] io_in;
  output [37:0] io_oeb;
  output [37:0] io_out;

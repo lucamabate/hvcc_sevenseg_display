@@ -167,6 +167,14 @@ MACRO user_project_wrapper
         RECT -4.800 878.980 2.400 880.180 ;
     END
   END analog_io[27]
+  PIN analog_io[28]
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT -4.800 617.860 2.400 619.060 ;
+    END
+  END analog_io[28]
   PIN analog_io[2]
     DIRECTION INOUT ;
     USE SIGNAL ;
@@ -6630,7 +6638,9 @@ MACRO user_project_wrapper
         RECT 2.800 682.740 2917.930 684.740 ;
         RECT 1.230 631.020 2917.930 682.740 ;
         RECT 1.230 629.020 2917.200 631.020 ;
-        RECT 1.230 565.060 2917.930 629.020 ;
+        RECT 1.230 619.460 2917.930 629.020 ;
+        RECT 2.800 617.460 2917.930 619.460 ;
+        RECT 1.230 565.060 2917.930 617.460 ;
         RECT 1.230 563.060 2917.200 565.060 ;
         RECT 1.230 554.180 2917.930 563.060 ;
         RECT 2.800 552.180 2917.930 554.180 ;

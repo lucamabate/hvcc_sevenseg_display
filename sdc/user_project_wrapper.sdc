@@ -1,6 +1,6 @@
 ###############################################################################
 # Created by write_sdc
-# Wed Nov 30 14:17:15 2022
+# Wed Dec  7 14:02:05 2022
 ###############################################################################
 current_design user_project_wrapper
 ###############################################################################
@@ -30,6 +30,7 @@ set_input_delay 2.0000 -clock [get_clocks {user_clock2}] -add_delay [get_ports {
 set_input_delay 2.0000 -clock [get_clocks {user_clock2}] -add_delay [get_ports {analog_io[25]}]
 set_input_delay 2.0000 -clock [get_clocks {user_clock2}] -add_delay [get_ports {analog_io[26]}]
 set_input_delay 2.0000 -clock [get_clocks {user_clock2}] -add_delay [get_ports {analog_io[27]}]
+set_input_delay 2.0000 -clock [get_clocks {user_clock2}] -add_delay [get_ports {analog_io[28]}]
 set_input_delay 2.0000 -clock [get_clocks {user_clock2}] -add_delay [get_ports {analog_io[2]}]
 set_input_delay 2.0000 -clock [get_clocks {user_clock2}] -add_delay [get_ports {analog_io[3]}]
 set_input_delay 2.0000 -clock [get_clocks {user_clock2}] -add_delay [get_ports {analog_io[4]}]
@@ -425,6 +426,7 @@ set_output_delay 2.0000 -clock [get_clocks {user_clock2}] -add_delay [get_ports 
 set_output_delay 2.0000 -clock [get_clocks {user_clock2}] -add_delay [get_ports {analog_io[25]}]
 set_output_delay 2.0000 -clock [get_clocks {user_clock2}] -add_delay [get_ports {analog_io[26]}]
 set_output_delay 2.0000 -clock [get_clocks {user_clock2}] -add_delay [get_ports {analog_io[27]}]
+set_output_delay 2.0000 -clock [get_clocks {user_clock2}] -add_delay [get_ports {analog_io[28]}]
 set_output_delay 2.0000 -clock [get_clocks {user_clock2}] -add_delay [get_ports {analog_io[2]}]
 set_output_delay 2.0000 -clock [get_clocks {user_clock2}] -add_delay [get_ports {analog_io[3]}]
 set_output_delay 2.0000 -clock [get_clocks {user_clock2}] -add_delay [get_ports {analog_io[4]}]
@@ -677,6 +679,7 @@ set_output_delay 2.0000 -clock [get_clocks {user_clock2}] -add_delay [get_ports 
 # Environment
 ###############################################################################
 set_load -pin_load 0.0334 [get_ports {wbs_ack_o}]
+set_load -pin_load 0.0334 [get_ports {analog_io[28]}]
 set_load -pin_load 0.0334 [get_ports {analog_io[27]}]
 set_load -pin_load 0.0334 [get_ports {analog_io[26]}]
 set_load -pin_load 0.0334 [get_ports {analog_io[25]}]
@@ -950,6 +953,7 @@ set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_ris
 set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_cyc_i}]
 set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_stb_i}]
 set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {wbs_we_i}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {analog_io[28]}]
 set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {analog_io[27]}]
 set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {analog_io[26]}]
 set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {analog_io[25]}]

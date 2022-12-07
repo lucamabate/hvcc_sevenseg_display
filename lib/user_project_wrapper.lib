@@ -28,8 +28,8 @@ library (user_project_wrapper) {
   type ("analog_io") {
     base_type : array;
     data_type : bit;
-    bit_width : 28;
-    bit_from : 27;
+    bit_width : 29;
+    bit_from : 28;
     bit_to : 0;
   }
   type ("io_in") {
@@ -175,6 +175,10 @@ library (user_project_wrapper) {
       bus_type : analog_io;
       direction : inout;
       capacitance : 0.0000;
+    pin("analog_io[28]") {
+      direction : inout;
+      capacitance : 0.0334;
+    }
     pin("analog_io[27]") {
       direction : inout;
       capacitance : 0.0334;

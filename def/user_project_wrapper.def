@@ -1311,7 +1311,7 @@ END VIAS
 COMPONENTS 1 ;
     - mprj user_proj_example + FIXED ( 1175000 1690000 ) N ;
 END COMPONENTS
-PINS 644 ;
+PINS 645 ;
     - analog_io[0] + NET analog_io[0] + DIRECTION INOUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -3600 -600 ) ( 3600 600 )
@@ -1392,6 +1392,10 @@ PINS 644 ;
       + PORT
         + LAYER met3 ( -3600 -600 ) ( 3600 600 )
         + PLACED ( -1200 879580 ) N ;
+    - analog_io[28] + NET analog_io[28] + DIRECTION INOUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -3600 -600 ) ( 3600 600 )
+        + PLACED ( -1200 618460 ) N ;
     - analog_io[2] + NET analog_io[2] + DIRECTION INOUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -3600 -600 ) ( 3600 600 )
@@ -7829,7 +7833,7 @@ SPECIALNETS 8 ;
       NEW met4 0 + SHAPE STRIPE ( -55130 71680 ) via5_6_3100_3100_2_2_1600_1600
       NEW met4 0 + SHAPE RING ( -55130 -49770 ) via5_6_3100_3100_2_2_1600_1600 ;
 END SPECIALNETS
-NETS 636 ;
+NETS 637 ;
     - analog_io[0] ( PIN analog_io[0] ) + USE SIGNAL ;
     - analog_io[10] ( PIN analog_io[10] ) + USE SIGNAL ;
     - analog_io[11] ( PIN analog_io[11] ) + USE SIGNAL ;
@@ -7850,6 +7854,7 @@ NETS 636 ;
     - analog_io[25] ( PIN analog_io[25] ) + USE SIGNAL ;
     - analog_io[26] ( PIN analog_io[26] ) + USE SIGNAL ;
     - analog_io[27] ( PIN analog_io[27] ) + USE SIGNAL ;
+    - analog_io[28] ( PIN analog_io[28] ) + USE SIGNAL ;
     - analog_io[2] ( PIN analog_io[2] ) + USE SIGNAL ;
     - analog_io[3] ( PIN analog_io[3] ) + USE SIGNAL ;
     - analog_io[4] ( PIN analog_io[4] ) + USE SIGNAL ;
