@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1670421526
+timestamp 1671028873
 << nwell >>
 rect 1066 116677 178886 117243
 rect 1066 115589 178886 116155
@@ -615,7 +615,7 @@ string FIXED_BBOX 0 0 180000 120000
 string LEFclass BLOCK
 string LEFview TRUE
 string GDS_END 5633024
-string GDS_FILE /home/designer-01/designs/hvcc_sevenseg_display/openlane/user_proj_example/runs/22_12_07_05_56/results/signoff/user_proj_example.magic.gds
+string GDS_FILE /home/designer-01/designs/hvcc_sevenseg_display/openlane/user_proj_example/runs/22_12_14_06_39/results/signoff/user_proj_example.magic.gds
 string GDS_START 137622
 << end >>
 
